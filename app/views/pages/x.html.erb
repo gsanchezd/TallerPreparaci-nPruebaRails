@@ -1,1 +1,13 @@
-<h1>Gonzalo</h1>
+<div class="container">
+  <h1>Gonzalo</h1>
+
+  <div class="well">
+    <form action="<%= pages_save_user_path %>" method="post">
+      Nombre: <input type="text" name="name" class="form-control">
+      Email: <input type="text" name="email" class="form-control">
+      Edad: <input type="text" name="age" class="form-control">
+      <input type="submit" class="btn btn-primary">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    </form>
+  </div>
+</div>
